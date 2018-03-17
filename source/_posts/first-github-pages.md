@@ -1,9 +1,7 @@
 ---
 title: My First GitHub Pages
 date: 2018-03-17 10:54:46
-tags: 
-    - github
-    - hexo 
+tags:  
 ---
 
 This is my very first post about how to build github pages with Hexo.
@@ -40,3 +38,4 @@ Then "git push" again. After entering the password of repository, done！
 $ npm install hexo-deployer-git --save
 ```
 
+Page build failed: Unknown tag error
