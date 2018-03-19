@@ -7,7 +7,7 @@ tags:
 This is my very first post about how to build github pages with Hexo.
 Below are some issue that I encounterd and settled when I was setting up. 
 
-## 1. First push
+## First push
 
 After "git clone" the repository from origin to local, I followed the steps that Hexo tells to complete some basic settings, and ran "hexo s", things was fine. However when trying to push them to origin master, I got this: 
 
@@ -38,7 +38,7 @@ Then "git push" again. After entering the password of repository, done！
 $ npm install hexo-deployer-git --save
 ```
 
-## 2. Page build failed: Unknown tag error
+## Page build failed: Unknown tag error
 
 
 
