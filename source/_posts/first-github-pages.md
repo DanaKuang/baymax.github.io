@@ -30,7 +30,7 @@ $ vim .git/config
         url = https://XXaccountXX@github.com/XXaccountXX/baymax.github.io.git       
 ```
 
-Then "git push" again. After entering the password of repository, done！
+Then "git push" again, enter the password of repository, and done！
 
 "hexo deploy" can also help to push, but it needs to be installed first.
 
@@ -39,6 +39,18 @@ $ npm install hexo-deployer-git --save
 ```
 
 ## Page build failed: Unknown tag error
+
+正式部署之前需要改下root 不再是 / 而是 域名下面的第一路径 /baymax.github.io/
+
+可是图片路径仍然不对.
+
+然后把 theme config下面# Images Settings 的img改成相对路径，就好了。去掉前面的/
+
+这样本地也是好的。并且本地的服务搭建在http://localhost:4000/baymax.github.io/地址，而不是localhost:4000
+
+但是还有一个小问题啊，就是点进去每个页面的avatar路径还是不对。。
+
+
 
 
 
