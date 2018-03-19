@@ -5,15 +5,15 @@ tags:
 ---
 
 This is my very first post about how to build github pages with Hexo.
-Below are some issue that I encounterd and settled when I was setting up. And I will sort them out by number.
+Below are some issue that I encounterd and settled when I was setting up. 
 
 ## 1. First push
 
-After 'git clone' the repository from origin to local, I followed the steps that Hexo tells to complete some basic settings, and then ran "hexo s", things was fine. However when trying to push them to origin master, git told me: 
+After "git clone" the repository from origin to local, I followed the steps that Hexo tells to complete some basic settings, and ran "hexo s", things was fine. However when trying to push them to origin master, I got this: 
 
 "fatal: unable to access 'https://github.com/DanaKuang/baymax.github.io.git/': The requested URL returned error: 403". 
 
-Here is the solution:
+"403" means there is no permission for me to push into the repository. So here is the solution:
 
 ``` bash
 $ cd blog
@@ -32,10 +32,13 @@ $ vim .git/config
 
 Then "git push" again. After entering the password of repository, done！
 
-"hexo deploy" can also help to push to origin.
+"hexo deploy" can also help to push, but it needs to be installed first.
 
 ``` bash
 $ npm install hexo-deployer-git --save
 ```
 
-Page build failed: Unknown tag error
+## 2. Page build failed: Unknown tag error
+
+
+
