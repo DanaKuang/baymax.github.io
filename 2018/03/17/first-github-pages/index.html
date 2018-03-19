@@ -366,7 +366,7 @@
             <script type="text/ls-javascript" id="post-thumbnail-script">
     var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', 'img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
 </script>
 
@@ -387,7 +387,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -492,7 +492,11 @@
 <p>Then “git push” again, enter the password of repository, and done！</p>
 <p>“hexo deploy” can also help to push, but it needs to be installed first.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h2 id="Page-build-failed-Unknown-tag-error"><a href="#Page-build-failed-Unknown-tag-error" class="headerlink" title="Page build failed: Unknown tag error"></a>Page build failed: Unknown tag error</h2>
+<h2 id="Page-build-failed-Unknown-tag-error"><a href="#Page-build-failed-Unknown-tag-error" class="headerlink" title="Page build failed: Unknown tag error"></a>Page build failed: Unknown tag error</h2><p>正式部署之前需要改下root 不再是 / 而是 域名下面的第一路径 /baymax.github.io/</p>
+<p>可是图片路径仍然不对.</p>
+<p>然后把 theme config下面# Images Settings 的img改成相对路径，就好了。去掉前面的/</p>
+<p>这样本地也是好的。并且本地的服务搭建在<a href="http://localhost:4000/baymax.github.io/地址，而不是localhost:4000" target="_blank" rel="noopener">http://localhost:4000/baymax.github.io/地址，而不是localhost:4000</a></p>
+
     
 
     
@@ -540,7 +544,7 @@
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+        <div class="sidebar-header header-cover" style="background-image: url(img/sidebar_header.png);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -555,7 +559,7 @@
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="Kuang's avatar">
+        <img src="img/avatar.png" alt="Kuang's avatar">
     </div>
 
     <!-- Sidebar Email -->
