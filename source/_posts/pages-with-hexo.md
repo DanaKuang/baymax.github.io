@@ -1,7 +1,7 @@
 ---
-title: My First GitHub Pages
+title: Pages with Hexo
 date: 2018-03-17 10:54:46
-tags:  
+tags: [hexo, github pages] 
 ---
 
 This is my very first post about how to build github pages with Hexo.
@@ -40,6 +40,8 @@ $ npm install hexo-deployer-git --save
 
 ## Page build failed: Unknown tag error
 
+## layout disorder
+
 正式部署之前需要改下root 不再是 / 而是 域名下面的第一路径 /baymax.github.io/
 
 可是图片路径仍然不对.
@@ -49,7 +51,6 @@ $ npm install hexo-deployer-git --save
 这样本地也是好的。并且本地的服务搭建在http://localhost:4000/baymax.github.io/地址，而不是localhost:4000
 
 但是还有一个小问题啊，就是点进去每个页面的avatar路径还是不对。。
-
 
 
 
